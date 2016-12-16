@@ -16,6 +16,7 @@ RUN apt-get install -y -q \
   git \
   google-chrome-beta \
   openjdk-7-jre-headless \
+  nano \
   nodejs \
   php5-cli \
   php5-curl \
@@ -33,9 +34,9 @@ RUN chgrp -R seleuser /home/seleuser
 RUN mkdir -p /usr/share/desktop-directories
 ADD ./scripts/ /home/root/scripts
 RUN npm install -g \
-  chromedriver \
   selenium-standalone \
   phantomjs-prebuilt
+RUN selenium-standalone install
 RUN php -r "copy('https://getcomposer.org/installer', '/tmp/composer-setup.php');"
 RUN php /tmp/composer-setup.php --install-dir="/usr/local/bin"
 RUN ln -s /usr/local/bin/composer.phar /usr/local/bin/composer
