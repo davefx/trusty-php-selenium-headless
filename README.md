@@ -9,4 +9,4 @@ This docker image implements a selenium based test environment. It includes:
 * PHP 5
 * Last Composer
 
-It is based on the previous docker image by Mani Ghasemlou 
+It is based on the previous docker image by Mani Ghasemlou [mghasemlou/selenium-headless](https://hub.docker.com/r/mghasemlou/selenium-headless/)
