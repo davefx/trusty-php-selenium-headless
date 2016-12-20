@@ -40,6 +40,6 @@ RUN selenium-standalone install
 RUN php -r "copy('https://getcomposer.org/installer', '/tmp/composer-setup.php');"
 RUN php /tmp/composer-setup.php --install-dir="/usr/local/bin"
 RUN ln -s /usr/local/bin/composer.phar /usr/local/bin/composer
-EXPOSE 4444 5999
+EXPOSE 4444 5909
 ENTRYPOINT ["sh", "/home/root/scripts/startXvfb.sh"]
 
