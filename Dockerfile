@@ -15,7 +15,7 @@ RUN apt-get install -y -q \
   firefox \
   git \
   google-chrome-beta \
-  openjdk-7-jre-headless \
+  openjdk-8-jre-headless \
   nano \
   nodejs \
   php5-cli \
